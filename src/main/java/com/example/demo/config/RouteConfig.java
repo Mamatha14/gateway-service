@@ -16,7 +16,7 @@ public class RouteConfig {
                         .uri("http://localhost:3010/"))
                 .route("comment-service", rt -> rt.path("/posts/**")
                         .uri("http://localhost:3015/"))
-                .route("", rt -> rt.path("/postsOrComments/**")
+                .route("like-service", rt -> rt.path("/postsOrComments/**")
                         .uri("http://localhost:3020/"))
                 .build();
     }
