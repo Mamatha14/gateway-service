@@ -4,6 +4,15 @@ spring:
       discovery:
         locator:
           enabled: true
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
     discovery:
       enabled: true
   application:
@@ -17,3 +26,4 @@ eureka:
     hostname: localhost
 server:
   port: 8000
+
